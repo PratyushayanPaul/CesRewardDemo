@@ -1,5 +1,4 @@
 import { Injectable, signal, computed, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 // --- Interfaces ---
 export interface User {
@@ -96,7 +95,6 @@ const CAPSTONE_REWARDS: RewardItem[] = [
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
-  private http = inject(HttpClient); 
 
   // --- State Signals ---
   currentUser = signal<User | null>(null);

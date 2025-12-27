@@ -6,7 +6,6 @@ import { DataService, Customer } from '../services/data.service';
 
 @Component({
   selector: 'app-customer-detail',
-  standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   template: `
     @if (customer(); as c) {

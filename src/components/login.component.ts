@@ -5,7 +5,6 @@ import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
   imports: [FormsModule],
   template: `
     <div class="flex min-h-screen items-center justify-center bg-gray-100">
